@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body{
+  @apply bg-[#04042f] overflow-x-hidden
+}
+.input{
+  @apply bg-transparent shadow-sm shadow-black text-white outline-0 rounded-md px-2 py-0.5 w-[60%]
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #0a1528;
+}
+::-webkit-scrollbar{
+    width: 4px;
+    background-color: #112240;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
