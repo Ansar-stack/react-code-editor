@@ -18,7 +18,7 @@ const ContextProvider = ({ children }) => {
   localStorage.setItem('settings', JSON.stringify(settings));
   }, [settings])
   
-  return <SettingContext.Provider value={{settings: JSON.parse(localStorage.getItem('settings')), setSettings}}>{children}</SettingContext.Provider>;
+  return <SettingContext.Provider value={{settings: localStorage.getItem('settings')?JSON.parse(localStorage.getItem('settings')): settings, setSettings}}>{children}</SettingContext.Provider>;
 };
 
 export default ContextProvider;
